@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .link{
+        @apply relative after:block after:scale-0 after:absolute after:top-[53px] after:content-[""] after:w-full after:h-[3px] after:transition after:duration-500 after:origin-center after:bg-white hover:after:scale-100
+    }
+}
