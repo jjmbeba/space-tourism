@@ -12,6 +12,6 @@
     }
 
     .link-text{
-        @apply flex items-center gap-[11px] justify-center
+        @apply flex text-[16px] leading-[19px] tracking-[2.7px] items-center gap-[11px] justify-center text-white font-barlow-condensed font-normal
     }
 }
