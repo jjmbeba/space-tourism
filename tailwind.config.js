@@ -9,7 +9,7 @@ module.exports = {
       backgroundImage:{
         'home-mob':"url('/home/background-home-mobile.jpg')",
         'home-tab':"url('/home/background-home-tablet.jpg')",
-        'home-desk':"url('/home/background-home-desk.jpg')"
+        'home-desk':"url('/home/background-home-desktop.jpg')"
       },
       fontFamily:{
         'barlow-condensed':'Barlow Condensed',
