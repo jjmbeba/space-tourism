@@ -9,7 +9,10 @@ module.exports = {
       backgroundImage:{
         'home-mob':"url('/home/background-home-mobile.jpg')",
         'home-tab':"url('/home/background-home-tablet.jpg')",
-        'home-desk':"url('/home/background-home-desktop.jpg')"
+        'home-desk':"url('/home/background-home-desktop.jpg')",
+        'dest-mob':"url('/destination/background-destination-mobile.jpg')",
+        'dest-desk':"url('/destination/background-destination-desktop.jpg')",
+        'dest-tab':"url('/destination/background-destination-tablet.jpg')",
       },
       fontFamily:{
         'barlow-condensed':'Barlow Condensed',
@@ -24,5 +27,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@headlessui/tailwindcss')
+  ],
 }
