@@ -16,6 +16,6 @@
     }
 
     .tab-title{
-        @apply relative ui-selected:text-white ui-selected:after:content-[""] after:w-full after:h-[3px] after:block after:bg-white after:absolute after:-bottom-[8px] after:left-0 after:scale-0 ui-selected:after:scale-100 after:duration-500 after:transition after:origin-center
+        @apply relative ui-selected:text-white ui-selected:after:content-[""] after:w-full after:h-[3px] after:block after:bg-white after:absolute after:-bottom-[8px] after:left-0 after:scale-0 ui-selected:after:scale-100 after:duration-500 after:transition after:origin-center ui-selected:outline-none ui-selected:border-none
     }
 }
