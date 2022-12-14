@@ -21,7 +21,7 @@ const destination = () => {
       <Tab.List className='mt-[26px] w-full flex items-center justify-center gap-[27px] font-barlow-condensed text-[14px] leading-[17px] tracking-[2.3625px] text-[#D0D6F9]'>
         {
           data.destinations.map(({name}) => (
-            <Tab onClick={(e) => setCurrent(name)} key={name} className='tab-title'>
+            <Tab onClick={(e) => setCurrent(name.toLowerCase())} key={name} className='tab-title'>
               {name}
             </Tab>
           ))
