@@ -2,9 +2,10 @@ import Image from "next/image"
 import Header from "../components/Header"
 import {Tab} from '@headlessui/react'
 import data from '../data.json'
+import { useState } from "react"
 
 const destination = () => {
-  console.log(data);
+  const [current, setCurrent] = useState("moon");
   return (
     <div className='h-screen w-screen overflow-x-hidden bg-dest-mob bg-no-repeat bg-center bg-cover'>
         <Header/>
@@ -14,26 +15,22 @@ const destination = () => {
         </h2>
         
         <Tab.Group>
-        {/* <Tab.Panels>
-           { data.destinations.map(({images}) => (
-              <Tab.Panel>
-                <div className="w-full flex items-center justify-center pt-[32px]">
-                  <Image src={images.png} width={170} height={170} alt="planet-image"/>
-                </div>
-            </Tab.Panel>
-            ))}
-        </Tab.Panels> */}
+        <div className="w-full flex items-center justify-center pt-[32px]">
+          <Image priority src={`/destination/image-${current}.png`} width={170} height={170} alt="planet-image"/>
+        </div>
       <Tab.List className='mt-[26px] w-full flex items-center justify-center gap-[27px] font-barlow-condensed text-[14px] leading-[17px] tracking-[2.3625px] text-[#D0D6F9]'>
         {
           data.destinations.map(({name}) => (
-            <Tab className='tab-title'>{name}</Tab>
+            <Tab onClick={(e) => setCurrent(name)} key={name} className='tab-title'>
+              {name}
+            </Tab>
           ))
         }
       </Tab.List>
       <Tab.Panels>
         {
           data.destinations.map((({name, description, distance, travel}) => (
-            <Tab.Panel>
+            <Tab.Panel key={name}>
               <h2 className="font-bellefair text-[56px] leading-[64px] text-center mt-20 uppercase text-white">{name}</h2>
               <p className="mx-[24px] mt-[1px] pb-[32px] text-[15px] leading-[25px] text-[#D0D6F9] font-barlow text-center border border-transparent border-solid border-b-[#383B4B]">
                 {description}
