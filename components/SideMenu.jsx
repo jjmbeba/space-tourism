@@ -13,25 +13,25 @@ const SideMenu = () => {
         </div>
         <div className='mt-[64px] flex flex-col items-start gap-[32px]'>
         <span className=''>
-            <Link className='link-text' href='/'>
+            <Link onClick={() => dispatch(setMenuState())} className='link-text' href='/'>
               <span className='link-num'>00</span>
               <span>HOME</span>
             </Link>
           </span>
           <span className=''>
-            <Link className='link-text' href='/destination'>
+            <Link onClick={() => dispatch(setMenuState())} className='link-text' href='/destination'>
               <span className='link-num'>01</span>
               <span>DESTINATION</span>
             </Link>
           </span>
           <span className=''>
-            <Link className='link-text' href='/'>
+            <Link onClick={() => dispatch(setMenuState())} className='link-text' href='/'>
               <span className='link-num'>02</span>
               <span>CREW</span>
             </Link>
           </span>
           <span className=''>
-            <Link className='link-text' href='/'>
+            <Link onClick={() => dispatch(setMenuState())} className='link-text' href='/'>
               <span className='link-num'>03</span>
               <span>TECHNOLOGY</span>
             </Link>
