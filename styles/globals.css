@@ -8,7 +8,7 @@
     }
 
     .link-num{
-        @apply font-bold text-[16px] leading-[19px] tracking-[2.7px] text-white
+        @apply font-bold text-[16px] leading-[19px] tracking-[2.7px] text-white hidden lg:block
     }
 
     .link-text{

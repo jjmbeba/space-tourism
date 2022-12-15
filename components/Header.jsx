@@ -19,7 +19,7 @@ const Header = () => {
             </Link>
           </span>
           <span className='link'>
-            <Link className='link-text' href='/'>
+            <Link className='link-text' href='/destination'>
               <span className='link-num'>01</span>
               <span>DESTINATION</span>
             </Link>
