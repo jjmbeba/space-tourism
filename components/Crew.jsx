@@ -16,8 +16,8 @@ const Crew = () => {
   };
 
   return (
-    <main className="w-screen h-auto overflow-x-hidden">
-      <div className="lg:pt-[40px] px-[24px] lg:pb-[131px] w-full h-full bg-crew-mob md:bg-crew-tab lg:bg-crew-desk bg-center bg-cover bg-no-repeat">
+    <main className="w-screen overflow-x-hidden bg-crew-mob md:bg-crew-tab lg:bg-crew-desk bg-center bg-cover bg-no-repeat">
+      <div className="lg:pt-[40px] lg:pb-[131px] w-full h-full ">
         <Header />
         <h2 className="w-full flex items-center justify-center md:justify-start md:ml-[38.5px] lg:ml-[166.5px] gap-[18px] lg:gap-[28px] mt-[34px] md:mt-[40px] lg:mt-[76px] text-[16px] md:text-[20px] lg:text-[28px] text-white leading-[19px] md:leading-[24px] lg:leading-[34px] tracking-[2.7px] md:tracking-[3.375px] lg:tracking-[4.725px] font-barlow-condensed">
           <span className="font-bold mix-blend-normal opacity-25">02</span>
@@ -39,7 +39,7 @@ const Crew = () => {
                     alt="crew-image"
                   />
                   </div>
-                  <div className="w-screen h-[1px] bg-[#383B4B]"/>
+                  <div className="w-[calc(100%-48px)] h-[1px] bg-[#383B4B] mx-[24px]"/>
                   <div className="mt-[74px] font-bellefair w-full">
                     <h3 className="uppercase text-center text-[16px] leading-[18px] mix-blend-normal text-white opacity-50">
                       {role}
@@ -48,7 +48,7 @@ const Crew = () => {
                       {name}
                     </h2>
                   </div>
-                  <p className="font-barlow text-[15px] leading-[25px] text-center pt-[16px] pb-[79px]  text-[#D0D6F9]">
+                  <p className="font-barlow px-[24px] text-[15px] leading-[25px] text-center pt-[16px] pb-[79px]  text-[#D0D6F9]">
                     {bio}
                   </p>
                 </>
