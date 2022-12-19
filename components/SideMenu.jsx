@@ -42,7 +42,7 @@ const SideMenu = () => {
           <Link
             onClick={() => dispatch(setMenuState())}
             className="link-text"
-            href="/"
+            href="/crew"
           >
             <span className="link-num">02</span>
             <span>CREW</span>
