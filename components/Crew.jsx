@@ -31,27 +31,27 @@ const Crew = () => {
             {data.crew.map(({ images,role,bio, name }) => {
               const image = images.svg;
               return (
-                <>
+                <div className="md:!flex flex-col-reverse">
                   <div className="w-full flex items-center justify-center">
                   <img
-                    className="w-auto h-[222px]"
+                    className="w-auto h-[222px] md:h-[532px]"
                     src={image}
                     alt="crew-image"
                   />
                   </div>
-                  <div className="w-[calc(100%-48px)] h-[1px] bg-[#383B4B] mx-[24px]"/>
+                  <div className="w-[calc(100%-48px)] h-[1px] bg-[#383B4B] mx-[24px] md:hidden "/>
                   <div className="mt-[74px] font-bellefair w-full">
-                    <h3 className="uppercase text-center text-[16px] leading-[18px] mix-blend-normal text-white opacity-50">
+                    <h3 className="uppercase text-center text-[16px] md:text-[24px] leading-[18px] md:leading-[28px] mix-blend-normal text-white opacity-50">
                       {role}
                     </h3>
-                    <h2 className="text-[24px] uppercase leading-[28px] text-center text-white mt-[8px]">
+                    <h2 className="text-[24px] md:text-[40px] uppercase leading-[28px] md:leading-[46px] text-center text-white mt-[8px]">
                       {name}
                     </h2>
-                  </div>
-                  <p className="font-barlow px-[24px] text-[15px] leading-[25px] text-center pt-[16px] pb-[79px]  text-[#D0D6F9]">
+                  <p className="font-barlow px-[24px] md:px-[88px] text-[15px] md:text-[16px] leading-[25px] md:leading-[28px] text-center pt-[16px] pb-[79px] md:pb-[90px] text-[#D0D6F9]">
                     {bio}
                   </p>
-                </>
+                  </div>
+                </div>
               );
             })}
           </Slider>
