@@ -23,6 +23,7 @@
 .slick-dots{
     position: absolute !important;
     top: 240px !important;
+    display: inline;
     width: auto;
     height: auto;
 }
