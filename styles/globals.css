@@ -23,6 +23,8 @@
 .slick-dots{
     position: absolute !important;
     top: 240px !important;
+    width: auto;
+    height: auto;
 }
 
 .slick-dots li.slick-active button:before{
@@ -40,5 +42,17 @@
     .slick-dots{
         position: absolute !important;
         top: 274px !important;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .slick-dots{
+        position: absolute !important;
+        left: 167px !important;
+        width: auto;
+        height: auto;
+        top: 506px !important;
     }
 }
