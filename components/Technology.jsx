@@ -15,7 +15,7 @@ const Technology = () => {
           <span className="font-bold mix-blend-normal opacity-25">03</span>
           <span>SPACE LAUNCH 101</span>
         </h2>
-        <div className="lg:flex flex-row-reverse lg:ml-[165px] lg:gap-[70px]">
+        <div className="lg:flex flex-row-reverse lg:ml-[165px] lg:gap-[70px] lg:pb-[101px]">
         <div className="mt-[32px] md:mt-[60px] w-full">
           <img
             src={technology[current].images.landscape}
