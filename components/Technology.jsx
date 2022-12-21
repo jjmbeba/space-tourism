@@ -1,9 +1,12 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import { Tab } from "@headlessui/react";
+import data from "../data.json";
 
 const Technology = () => {
+  const { technology } = data;
+  const [current, setCurrent] = useState(0);
   return (
     <main className="w-screen h-screen overflow-x-hidden bg-tech-mob md:bg-tech-tab lg:bg-tech-desk bg-center bg-cover bg-no-repeat">
       <div className="h-full w-full lg:pt-[40px]">
@@ -14,23 +17,33 @@ const Technology = () => {
         </h2>
         <div className="mt-[32px] w-full">
           <Image
-            src="/technology/image-launch-vehicle-landscape.jpg"
+            src={technology[current].images.landscape}
             width={375}
             height={170}
             alt="space-image"
           />
         </div>
-        <Tab.Group className='w-full font-bellefair px-[24px] mt-[34px] flex items-center justify-center gap-[16px]'>
-          <Tab.List>
-            <Tab className='tech-tab'>1</Tab>
-            <Tab className='tech-tab'>2</Tab>
-            <Tab className='tech-tab'>3</Tab>
+        <Tab.Group>
+          <Tab.List className="w-full font-bellefair px-[24px] mt-[34px] flex items-center justify-center gap-[16px]">
+            <Tab onClick={() => setCurrent(0)} className="tech-tab">1</Tab>
+            <Tab onClick={() => setCurrent(1)} className="tech-tab">2</Tab>
+            <Tab onClick={() => setCurrent(2)} className="tech-tab">3</Tab>
           </Tab.List>
-          {/* <Tab.Panels>
-            <Tab.Panel>Content 1</Tab.Panel>
-            <Tab.Panel>Content 2</Tab.Panel>
-            <Tab.Panel>Content 3</Tab.Panel>
-          </Tab.Panels> */}
+          <Tab.Panels>
+            {technology.map(({name, description}) => (
+              <Tab.Panel className="w-full flex flex-col items-center justify-center mt-[26px]">
+                <h3 className="font-barlow-condensed text-[14px] leading-[16.8px] tracking-[2.36px] text-[#D0D6F9]">
+                  THE TERMINOLOGY…
+                </h3>
+                <h2 className="mt-[9px] font-bellefair text-[24px] leading-[28px] uppercase text-white">
+                  {name}
+                </h2>
+                <p className="w-full px-[24px] pt-[16px] pb-[56px] text-[15px] leading-[25px] text-center font-barlow text-[#D0D6F9]">
+                  {description}
+                </p>
+              </Tab.Panel>
+            ))}
+          </Tab.Panels>
         </Tab.Group>
       </div>
     </main>
