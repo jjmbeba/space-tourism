@@ -17,7 +17,7 @@ const Crew = () => {
 
   return (
     <main className="w-screen overflow-x-hidden h-auto bg-crew-mob md:bg-crew-tab lg:bg-crew-desk bg-center bg-cover bg-no-repeat">
-      <div className="lg:pt-[40px] lg:pb-[0px] w-full h-full ">
+      <div className="lg:pt-[40px] w-full h-full ">
         <Header />
         <h2 className="w-full flex items-center justify-center md:justify-start md:ml-[38.5px] lg:ml-[166.5px] gap-[18px] lg:gap-[28px] mt-[34px] md:mt-[40px] lg:mt-[76px] text-[16px] md:text-[20px] lg:text-[28px] text-white leading-[19px] md:leading-[24px] lg:leading-[34px] tracking-[2.7px] md:tracking-[3.375px] lg:tracking-[4.725px] font-barlow-condensed">
           <span className="font-bold mix-blend-normal opacity-25">02</span>

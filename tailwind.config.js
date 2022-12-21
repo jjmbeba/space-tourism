@@ -16,6 +16,9 @@ module.exports = {
         'crew-mob':"url('/crew/background-crew-mobile.jpg')",
         'crew-desk':"url('/crew/background-crew-desktop.jpg')",
         'crew-tab':"url('/crew/background-crew-tablet.jpg')",
+        'tech-mob':"url('/technology/background-technology-mobile.jpg')",
+        'tech-desk':"url('/technology/background-technology-desktop.jpg')",
+        'tech-tab':"url('/technology/background-technology-tablet.jpg')",
       },
       fontFamily:{
         'barlow-condensed':'Barlow Condensed',

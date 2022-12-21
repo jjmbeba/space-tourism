@@ -44,7 +44,7 @@ const Header = () => {
           </Link>
         </span>
         <span className="link">
-          <Link className="link-text" href="/">
+          <Link className="link-text" href="/technology">
             <span className="link-num">03</span>
             <span>TECHNOLOGY</span>
           </Link>
