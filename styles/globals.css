@@ -20,7 +20,7 @@
     }
 
     .tech-tab{
-        @apply text-[16px] md:text-[24px] leading-[18px] md:leading-[28px] tracking-[1px] md:tracking-[1.5px] text-white px-[16px] md:px-[23.5px] py-[11px] md:py-[16px] border border-white rounded-full border-opacity-25 mix-blend-normal flex items-center justify-center ui-selected:text-[#0B0D17] ui-selected:border-none ui-selected:bg-white ui-selected:outline-none
+        @apply text-[16px] md:text-[24px] lg:text-[32px] leading-[18px] md:leading-[28px] lg:leading-[37px] tracking-[1px] md:tracking-[1.5px] lg:tracking-[2px] text-white px-[16px] md:px-[23.5px] lg:px-[32px] py-[11px] md:py-[16px] lg:py-[21.5px] border border-white rounded-full border-opacity-25 mix-blend-normal flex items-center justify-center ui-selected:text-[#0B0D17] ui-selected:border-none ui-selected:bg-white ui-selected:outline-none
     }
 }
 
