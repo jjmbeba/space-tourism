@@ -15,30 +15,29 @@ const Technology = () => {
           <span className="font-bold mix-blend-normal opacity-25">03</span>
           <span>SPACE LAUNCH 101</span>
         </h2>
-        <div className="mt-[32px] w-full">
-          <Image
+        <div className="mt-[32px] md:mt-[60px] w-full">
+          <img
             src={technology[current].images.landscape}
-            width={375}
-            height={170}
+            className='w-full h-[170px] md:h-[310px]'
             alt="space-image"
           />
         </div>
         <Tab.Group>
-          <Tab.List className="w-full font-bellefair px-[24px] mt-[34px] flex items-center justify-center gap-[16px]">
+          <Tab.List className="w-full font-bellefair mt-[34px] md:mt-[56px] flex items-center justify-center gap-[16px]">
             <Tab onClick={() => setCurrent(0)} className="tech-tab">1</Tab>
             <Tab onClick={() => setCurrent(1)} className="tech-tab">2</Tab>
             <Tab onClick={() => setCurrent(2)} className="tech-tab">3</Tab>
           </Tab.List>
           <Tab.Panels>
             {technology.map(({name, description}) => (
-              <Tab.Panel className="w-full flex flex-col items-center justify-center mt-[26px]">
-                <h3 className="font-barlow-condensed text-[14px] leading-[16.8px] tracking-[2.36px] text-[#D0D6F9]">
+              <Tab.Panel key={name} className="w-full flex flex-col items-center justify-center mt-[26px] md:mt-[44px]">
+                <h3 className="font-barlow-condensed text-[14px] md:text-[16px] leading-[16.8px] md:leading-[19px] tracking-[2.36px] md:tracking-[2.7px] text-[#D0D6F9]">
                   THE TERMINOLOGY…
                 </h3>
-                <h2 className="mt-[9px] font-bellefair text-[24px] leading-[28px] uppercase text-white">
+                <h2 className="mt-[9px] md:mt-[16px] font-bellefair text-[24px] md:text-[40px] leading-[28px] md:leading-[46px] uppercase text-white">
                   {name}
                 </h2>
-                <p className="w-full px-[24px] pt-[16px] pb-[56px] text-[15px] leading-[25px] text-center font-barlow text-[#D0D6F9]">
+                <p className="w-full px-[24px] md:px-[155px] pt-[16px] pb-[56px] md:pb-[97px] text-[15px] md:text-[16px] leading-[25px] md:leading-[28px] text-center font-barlow text-[#D0D6F9]">
                   {description}
                 </p>
               </Tab.Panel>

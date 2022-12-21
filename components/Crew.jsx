@@ -31,7 +31,7 @@ const Crew = () => {
             {data.crew.map(({ images,role,bio, name }) => {
               const image = images.svg;
               return (
-                <div className="md:!flex flex-col-reverse lg:flex-row-reverse lg:gap-[81px]">
+                <div key={name} className="md:!flex flex-col-reverse lg:flex-row-reverse lg:gap-[81px]">
                   <div className="w-full flex items-center justify-center">
                   <img
                     className="w-auto h-[222px] md:h-[532px] lg:h-[712px]"
